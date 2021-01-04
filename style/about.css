@@ -1,0 +1,343 @@
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f9eae4;
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  color: #f9eae4;
+}
+a {
+  text-decoration: none;
+  position: relative;
+}
+/* ////////////////Header\\\\\\\\\\\\\\\\\ */
+
+header {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  z-index: 100;
+  background: radial-gradient(
+    circle,
+    rgba(17, 13, 15, 1) 8%,
+    rgba(89, 63, 54, 1) 70%,
+    rgba(169, 130, 116, 1) 100%
+  );
+  border-bottom: 3px solid #795548;
+}
+.navigation {
+  height: 100%;
+}
+.nav {
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  color: #e7b164;
+  line-height: 6rem;
+}
+.list-left,
+.list-right {
+  height: 100%;
+  width: 40%;
+  list-style: none;
+}
+
+.list-left {
+  float: left;
+  padding-left: 6rem;
+}
+.list-right li:last-child a,
+.list-left li:first-child a {
+  font-size: 2.5rem;
+}
+.list-right {
+  float: right;
+  padding-right: 6rem;
+}
+
+.logo {
+  width: 20%;
+  padding: 0.5rem;
+  height: 100%;
+}
+.logo a,
+.logo img {
+  width: 8rem;
+  height: 8rem;
+}
+.logo img {
+  margin: auto;
+}
+
+.nav-item {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+}
+.nav-item a {
+  width: 100%;
+  height: 5rem;
+  display: block;
+  color: #be9585;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+.nav-item a:hover {
+  font-weight: bold;
+  color: #ebebeb;
+  font-size: 3.5rem;
+  /* background-color: #e7b06459; */
+
+  /* border-bottom: 3px solid #f9eae4; */
+  /* color: #1d110c;
+      background-color: #fbf5f3;
+    
+      /* border-radius: 9rem 9rem; */
+  /* box-shadow: 0.2rem 0.2rem 0.4rem #fffcf5; */
+}
+.list-right li:last-child a:hover,
+.list-left li:first-child a:hover {
+  font-size: 3rem;
+}
+main {
+  padding: 6rem;
+}
+.container {
+  width: 95%;
+  margin: 8rem auto;
+  padding: 5rem 5rem 0 5rem;
+  position: relative;
+  background-image: url(/img/48945-795548.svg);
+  background-size: 40%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.content-dis {
+  width: 70%;
+
+  display: table-cell;
+}
+.slides {
+  min-width: 25rem;
+  width: 30%;
+  color: #333333;
+  padding: 2rem;
+  display: table-cell;
+}
+.slide-cont {
+  width: 100%;
+  padding: 2rem 0;
+}
+.slide {
+  width: 100%;
+  height: 8rem;
+  line-height: 8rem;
+  text-align: center;
+}
+.slide-inpt {
+  display: none;
+}
+.slide-cntnt {
+  display: none;
+}
+.slide-titl {
+  display: block;
+  background-color: #402d26;
+  color: #faf2f0;
+  border-radius: 10rem;
+  box-shadow: 0.2rem 0.5rem 1rem #333333;
+  border-radius: 15rem 0rem;
+
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 3.3rem;
+  margin: 0.5rem auto;
+}
+.slide:nth-of-type(3) .slide-titl {
+  border-radius: 50%;
+}
+
+.slide-titl:hover {
+  background-color: #402d26;
+  color: #faf2f0;
+  font-weight: 700;
+  border-radius: 4rem;
+  box-shadow: 0.2rem 0.5rem 1rem #333333;
+  border-radius: 0rem 15rem;
+}
+.deco img {
+  width: 80%;
+  height: 8rem;
+}
+.slide-inpt:checked + label {
+  background-color: #795548;
+  color: #faf2f0;
+  border-radius: 10rem;
+  box-shadow: 0.2rem 0.5rem 1rem #333333;
+  border-radius: 0rem 15rem;
+  font-size: 3.6rem;
+}
+.slide-inpt:checked + label + p {
+  display: block;
+  position: absolute;
+  top: 20vh;
+  left: 35vw;
+  width: 50%;
+  height: 60%;
+  line-height: 5rem;
+  overflow-y: auto;
+  direction: ltr;
+  text-align: justify;
+  padding: 1rem 3rem;
+}
+
+/* ////////////////////////////////Footer\\\\\\\\\\\\\\\\\\\\\\ßß */
+
+footer {
+  background: linear-gradient(
+    97deg,
+    rgba(17, 13, 15, 1) 12%,
+    rgba(93, 64, 55, 1) 75%,
+    rgba(169, 130, 116, 1) 100%
+  );
+  padding: 2rem 5rem 2rem 5rem;
+}
+
+.footer-col {
+  display: inline-block;
+  width: 32%;
+  margin: auto;
+  text-align: center;
+  color: #ebebeb;
+  font-size: 2.3rem;
+  vertical-align: top;
+}
+.footer-col-cp {
+  display: inline-block;
+  width: 32%;
+  margin: auto;
+  text-align: center;
+  color: #ebebeb;
+  font-size: 2rem;
+  padding-top: 5%;
+}
+
+.footer-col h2 {
+  color: #ebebeb;
+  border-bottom: solid 2px #fd7e14;
+  margin: 1rem;
+}
+.footer-col a {
+  display: block;
+  width: 80%;
+  color: #ebebeb;
+  padding: 1rem;
+  margin: auto;
+  font-size: 2.3rem;
+}
+.footer-col a:hover {
+  background-color: #ebebeb;
+  border-radius: 4rem;
+  color: rgba(17, 13, 15, 1);
+  font-size: 2.8rem;
+}
+
+/* ///////////////////////////////mobile */
+@media screen and (max-width:800px){
+  .list-left,
+.list-right {
+  height: 100%;
+  width: 40%;
+  padding: 0;
+  list-style: none;
+}
+    main{
+        padding: 6rem 0 ;
+        background-image: none;
+        min-height: 100vh;
+    }
+    .container{
+        background-image: none;
+        padding: 0;
+        margin: 3rem auto;
+
+    }
+    .slide.deco{display: none;}
+    .slides{
+        width: 100%;
+        text-align: center;
+     
+      
+    }
+    .slide label{height: 6rem;
+        line-height: 6rem;
+    overflow: hidden;}
+    .slide-cont{height: 10rem;
+    padding: 0;
+    
+    }
+    .slide{
+        display: table-cell;
+      
+        height: 6rem;
+        margin: auto;
+        padding: 0;
+        
+        width:20vw;
+    }
+    .slide-inpt:checked + label + p {
+            display: block;
+            position: absolute;
+            top: 20rem;
+            left: 2vw;
+            width: 100%;
+            height: 60vh;
+            line-height: 5rem;
+            overflow-y: auto;
+            direction: ltr;
+            text-align: justify;
+            padding: 1rem 3rem;
+          }
+          .slide-titl {
+            display: block;
+            background-color: #402d26;
+            color: #faf2f0;
+       
+            box-shadow: 0.2rem 0.5rem 1rem #333333;
+          border-radius: 2rem;
+          
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            font-size: 2rem;
+            margin: 0.5rem auto;
+          }
+          .slide-inpt:checked + label {
+            background-color: #795548;
+            color: #faf2f0;
+            border-radius: 2rem;
+            box-shadow: 0.2rem 0.5rem 1rem #333333;
+       
+            
+          }
+          .slide-titl:hover {
+            background-color: #402d26;
+            color: #faf2f0;
+          
+            border-radius: 2rem;
+            box-shadow: 0.2rem 0.5rem 1rem #333333;
+       
+          }
