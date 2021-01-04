@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/style/contact.css" />
+    <link
+      rel="icon"
+      href="./img/coffee-beans.svg"
+      type="image/svg"
+      sizes="32*32"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul class="nav list-left">
+          <li class="nav-item"><a href="./02-about.html">About</a></li>
+          <li class="nav-item"><a href="/01-Facts.html">Facts</a></li>
+        </ul>
+        <div class="nav logo">
+          <a href="/00-index.html"
+            ><img src="./img/coffee-beans.svg" alt="Coffee Beans logo"
+          /></a>
+        </div>
+        <ul class="nav list-right">
+          <li class="nav-item"><a href="/04-gallery.html">Gallery</a></li>
+          <li class="nav-item"><a href="/03-Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="https://formspree.io/f/xgeprwwa" method="POST" class="form">
+        <div class="form-item">
+          <label for="f-nm">First name</label>
+          <input
+            type="text"
+            name="f-name"
+            id="f-nm"
+            minlength="2"
+            maxlength="15"
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label for="l-nm">Last name</label>
+          <input
+            type="text"
+            name="l-name"
+            id="l-nm"
+            minlength="2"
+            maxlength="15"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+        </div>
+        <div class="form-item switch">
+          <input type="checkbox" name="coffee" id="cfe" />
+          <label for="cfe"><span></span>Do You like Coffee??</label>
+          <fieldset>
+            <div class="form-item-types">
+              <label for="typ">Whats Your Favorit Coffee Drink?</label>
+              <select name="types" id="typ">
+                <option value="">Please select...</option>
+                <optgroup label="Hot Drinks">
+                  <option value="black">Black</option>
+                  <option value="espresso  ">Espresso</option>
+                  <option value="latte">Latte</option>
+                  <option value="mocha">Mocha</option>
+                  <option value="cappuccino">Cappuccino</option>
+                  <option value="lungo">Lungo</option>
+                </optgroup>
+                <optgroup label="Iced Coffee">
+                  <option value="i-espresso">Iced Espresso</option>
+                  <option value="Frappuccino">Frappuccino</option>
+                  <option value="i-coffee">Iced Coffee</option>
+                  <option value="cold-brew">Cold Brew/option></option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-item-rdio">
+              <p>Where do you drink coffee most often?</p>
+              <div>
+                <input type="radio" name="where" id="home" value="home" />
+                <label for="home">Home</label>
+              </div>
+              <div>
+                <input type="radio" name="where" id="cafe" value="cafe" />
+                <label for="cafe">Take away</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="where"
+                  id="tk-away"
+                  value="take-away"
+                />
+                <label for="tk-away">Cafe / Coffee shop</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-item">
+          <label for="tell">Tell us more</label>
+          <textarea name="tell-more" id="tell" cols="30" rows="5"></textarea>
+        </div>
+        <div class="btn">
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-col">
+        <h2>Lorem ipsum</h2>
+        <a href="#">Lorem, ipsum.</a>
+        <a href="#">lorem</a>
+        <a href="#">Lorem, ipsum.</a>
+      </div>
+      <div class="footer-col">
+        <h2>lorem</h2>
+        <a href="#">Lorem, ipsum dolor.</a>
+        <a href="#">Lorem, ipsum.</a>
+      </div>
+      <div class="footer-col-cp">
+        <p>site design / logo © 2020</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </footer>
+  </body>
+</html>
