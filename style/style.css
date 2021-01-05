@@ -37,9 +37,11 @@ header {
   );
   border-bottom: 3px solid #795548;
 }
+
 .navigation {
   height: 100%;
 }
+
 .nav {
   display: inline-block;
   text-align: center;
@@ -47,6 +49,7 @@ header {
   color: #e7b164;
   line-height: 6rem;
 }
+
 .list-left,
 .list-right {
   height: 100%;
@@ -120,6 +123,7 @@ main {
 
   background-image: url(../img/hero.jpg);
   background-size: cover;
+  background-position: center;
 }
 .hero-content {
   display: table-cell;
@@ -362,4 +366,55 @@ footer {
   color: rgba(17, 13, 15, 1);
   font-size: 2.8rem;
 }
-/* /////////////////////////////////////////////////////////////////////////////////////////////////////////ABOUT PAGE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// mobile\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@media (max-width: 769px) {
+  .list-left,
+  .list-right {
+    height: 100%;
+    width: 40%;
+    padding: 0;
+    list-style: none;
+  }
+  .nav a {
+    font-size: 2rem !important;
+  }
+  main {
+    padding-top: 6rem;
+  }
+  /* hero */
+  .hero {
+    background-position: left;
+    height: 50vh;
+  }
+  .hero-content {
+    padding-top: 25%;
+    text-align: center;
+  }
+  .hero-content-h {
+    width: 80%;
+    margin: 6rem auto;
+
+    font-size: 4rem;
+  }
+  .hero-content-p {
+    width: 80%;
+    margin: auto;
+  }
+  /* cards */
+  .cards {
+    display: none;
+  }
+  /* third section */
+  .items-cards {
+    padding: 3rem 1rem;
+  }
+  .item-card {
+    height: 80%;
+    background-color: #f9eae4;
+
+    padding: 2rem;
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
