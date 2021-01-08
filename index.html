@@ -24,52 +24,58 @@
   </head>
   <body>
     <header>
-      <nav class="navigation">
-        <ul class="nav list-left">
-          <li class="nav-item"><a href="./02-about.html">About</a></li>
-          <li class="nav-item"><a href="/01-Facts.html">Facts</a></li>
-        </ul>
-        <div class="nav logo">
-          <a href="/00-index.html"
-            ><img src="./img/coffee-beans.svg" alt="Coffee Beans logo"
-          /></a>
-        </div>
-        <ul class="nav list-right">
-          <li class="nav-item"><a href="/04-gallery.html">Gallery</a></li>
-          <li class="nav-item"><a href="/03-Contact.html">Contact</a></li>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list--small nav__list-item">
+            <a href="./02-about.html">About</a>
+          </li>
+          <li class="nav__list--large nav__list-item">
+            <a href="/01-Facts.html">Facts</a>
+          </li>
+          <li class="nav__list-logo nav__list-item">
+            <a href="/index.html"
+              ><img src="./img/coffee-beans.svg" alt="Coffee Beans logo"
+            /></a>
+          </li>
+          <li class="nav__list--large nav__list-item">
+            <a href="/04-gallery.html">Gallery</a>
+          </li>
+          <li class="nav__list--small nav__list-item">
+            <a href="/03-Contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <div class="hero-content">
-          <h1 class="hero-content-h">Lorem ipsum dolor sit.</h1>
-          <p class="hero-content-p">
+        <div class="hero__content">
+          <h1 class="hero__content-h">Lorem ipsum dolor sit.</h1>
+          <p class="hero__content-p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
             quis temporibus ipsum sit dignissimos cumque! Nesciunt, deleniti
             dignissimos. Aperiam, recusandae?
           </p>
         </div>
       </section>
-      <section class="cards">
-        <div class="card">
-          <div class="click left">
-            <input id="pt" type="checkbox" />
-            <label for="pt"> Lorem </label>
+      <section class="tiles">
+        <div class="tile">
+          <div class="tile__p">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
               facilis voluptas ipsa vel eaque impedit!
             </p>
           </div>
 
-          <div class="card-img"><img src="./img/card-btm.jpg" alt="" /></div>
+          <div class="tile__img tile__img--left">
+            <img src="./img/card tp.jpg" alt="" />
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-img"><img src="./img/card tp.jpg" alt="" /></div>
-          <div class="click right">
-            <input id="pb" type="checkbox" />
-            <label for="pb"> Lorem </label>
+        <div class="tile">
+          <div class="tile__img tile__img--right">
+            <img src="./img/card-btm.jpg" alt="" />
+          </div>
+          <div class="tile__p">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
               rerum illo. Similique veniam vitae officia.
@@ -77,52 +83,57 @@
           </div>
         </div>
       </section>
-      <section class="items-cards">
-        <div class="item-card">
-          <a class="item lnk" href="#"><img src="./img/item1.jpg" alt="" /></a>
-          <div class="item dis">
+      <section class="cards">
+        <div class="card">
+          <a class="card__img" href="#"><img src="./img/item1.jpg" alt="" /></a>
+          <div class="card__content">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
               dicta autem?
             </p>
           </div>
-          <div class="item btn"><a href="#">lorem1</a></div>
+          <div class="card__btn"><a href="#">lorem1</a></div>
         </div>
-        <div class="item-card">
-          <a class="item lnk" href="#"><img src="./img/item2.jpg" alt="" /></a>
-          <div class="item dis">
+        <div class="card">
+          <a class="card__img" href="#"><img src="./img/item2.jpg" alt="" /></a>
+          <div class="card__content">
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consequuntur, autem?
             </p>
           </div>
-          <div class="item btn"><a href="#">lorem</a></div>
+          <div class="card__btn"><a href="#">lorem</a></div>
         </div>
-        <div class="item-card">
-          <a class="item lnk" href="#"><img src="./img/item3.jpg" alt="" /></a>
-          <div class="item dis">
+        <div class="card">
+          <a class="card__img" href="#"><img src="./img/item3.jpg" alt="" /></a>
+          <div class="card__content">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
               cumque.
             </p>
           </div>
-          <div class="item btn"><a href="#">lorem</a></div>
+          <div class="card__btn"><a href="#">lorem</a></div>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-col">
-        <h2>Lorem ipsum</h2>
-        <a href="#">Lorem, ipsum.</a>
+    <footer class="footer">
+      <div class="footer__flex">
         <a href="#">lorem</a>
         <a href="#">Lorem, ipsum.</a>
+       
+       
+        <a href="#">lorem</a>
       </div>
-      <div class="footer-col">
-        <h2>lorem</h2>
-        <a href="#">Lorem, ipsum dolor.</a>
-        <a href="#">Lorem, ipsum.</a>
+   
       </div>
-      <div class="footer-col-cp">
+      <div class="footer__social">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+
+        <a href=""><i class="fab fa-instagram"></i></a>
+
+        <a href=""><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="footer__license">
         <p>site design / logo © 2020</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </div>
